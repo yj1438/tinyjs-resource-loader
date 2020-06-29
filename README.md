@@ -97,6 +97,8 @@ example
 + `options.verbose`: 是否展示完整错误日志
 
 > `outputPath` 和 `publicPath` 在 `options.image/json` 中配置时，优先级高于 `options` 中的
+
+
 > `options.process` 设置为 `false` 时，会跳过图片处理过程中的前 4 步，直接从 `options.output` 配置的目录中读取 JSON 和图片，并通过 [url-loader](https://github.com/webpack-contrib/url-loader) 将它们构建到指定目录中，但会产生 **webpack warning**。这是为了确保项目在本地构建过一次以后，在远程机器（很可能没有安装 ImageMagick 或 pngquant 系统依赖）也能够进行构建，兼顾跨平台云构建的需求
 
 ## 图片处理参数
